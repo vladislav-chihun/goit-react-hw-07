@@ -1,0 +1,34 @@
+.contactBox {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+.contactList {
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contactBtn {
+  padding: 3px 5px;
+  margin-right: 10px;
+  height: fit-content;
+}
+.nameText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.numberText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icon {
+  margin-right: 5px;
+}
