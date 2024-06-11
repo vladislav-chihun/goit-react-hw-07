@@ -36,9 +36,10 @@ const sliceContact = createSlice({
         }).addCase(addContact.rejected, (state) => {
             state.error = true;
             state.loading = false;
-        }).addCase(deleteContact.fulfilled, (state, acton) => {
+        }).addCase(deleteContact.fulfilled, (state, action) => {
             state.error = false;
             state.loading = false;
+            
         })
     },
 });
