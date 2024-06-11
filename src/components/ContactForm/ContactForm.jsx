@@ -16,7 +16,11 @@ export default function ContactForm() {
     const isError = useSelector(state => state.contacts.error)
 
     const handleSubmit = (values,{resetForm}) => {
-        dispatch(addContact(values));
+        const newContact = {
+            name: values.nameField,
+            number: values.numberField
+        };
+        dispatch(addContact(newContact));
         resetForm();
     };
 
