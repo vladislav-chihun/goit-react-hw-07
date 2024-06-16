@@ -9,7 +9,7 @@ import { selectFilteredContacts } from "../../redux/contactsSlice";
 
 const ContactList = () => {
     const dispatch = useDispatch();
-    useEffect(() => { dispatch(fetchContacts()) })
+    useEffect(() => { dispatch(fetchContacts()) },[dispatch])
     
     const filteredContacts = useSelector(selectFilteredContacts)
 
