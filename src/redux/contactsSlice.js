@@ -20,6 +20,7 @@ const sliceContact = createSlice({
     initialState: initialState.contacts,
     extraReducers: builder => {
         builder.addCase(fetchContacts.pending, (state) => {
+            state.loading = true;
             state.error = false;
         }).addCase(fetchContacts.fulfilled, (state, action) => {
             state.items = action.payload;
